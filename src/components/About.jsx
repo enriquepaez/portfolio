@@ -19,8 +19,20 @@ function About() {
   };
 
   return (
-    <Box my={6}>
-      <Box display="flex" alignItems="center" textAlign="center" flexDirection={isMobile ? 'column' : 'row'}>
+    <Box
+      sx={{
+        my: 6,
+        maxWidth: isMobile ? "85%" : "auto",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      }}
+    >
+      <Box
+        display="flex"
+        alignItems="center"
+        flexDirection={isMobile ? 'column' : 'row'}
+      >
         <Avatar 
           alt="Profile Picture" 
           src={ProfilePicture} 
@@ -31,7 +43,7 @@ function About() {
         </Typography>
       </Box>
 
-      <Box py={4}>
+      <Box py={4} sx={{textAlign: 'justify'}}>
         <Typography variant={isMobile ? 'body2' : 'body1'} paragraph>
           A <strong>Full-Stack Developer</strong> with a solid foundation in both backend and frontend technologies. After working in various fields, I decided to shift my career towards technology.
         </Typography>
