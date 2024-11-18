@@ -12,20 +12,30 @@ import NodeLogo from '../assets/tech/node-logo.png'
 import ExpressLogo from '../assets/tech/express-logo.png'
 import BootstrapLogo from '../assets/tech/bootstrap-logo.png'
 import MuiLogo from '../assets/tech/mui-logo.png'
+import Adopta1 from '../assets/projects/adoptaunvalencia1.png'
+import Adopta2 from '../assets/projects/adoptaunvalencia2.png'
+import Adopta3 from '../assets/projects/adoptaunvalencia3.png'
 import Platemate1 from '../assets/projects/platemate1.png'
 import Platemate2 from '../assets/projects/platemate2.png'
 import Platemate3 from '../assets/projects/platemate3.png'
 import Watchlistr1 from '../assets/projects/watchlistr1.png'
 import Watchlistr2 from '../assets/projects/watchlistr2.png'
 import Watchlistr3 from '../assets/projects/watchlistr3.png'
-import Pollito1 from '../assets/projects/pollito1.png'
-import Pollito2 from '../assets/projects/pollito2.png'
-import Pollito3 from '../assets/projects/pollito3.png'
+
 
 const projects = [
   {
+    title: 'Adopta un Valenciano',
+    description: 'This is a collaborative project designed to support individuals affected by the DANA in Valencia. Our platform connects those in need with volunteers offering temporary shelter, food, and hygiene facilities. By uniting efforts, we aim to provide meaningful assistance and a sense of hope during difficult times.',
+    images: [Adopta1, Adopta2, Adopta3],
+    technologies: [ReactLogo, NodeLogo, ExpressLogo, MongodbLogo, JsLogo],
+    link: 'https://adoptaunvalenciano.es/', 
+    githubFront: 'https://github.com/adoptaunvalencia/acoge-ayuda',
+    githubBack: 'https://github.com/adoptaunvalencia/backend'
+  },
+  {
     title: 'Platemate',
-    description: 'Dynamic recipe-sharing platform that empowers users to upload their own culinary creations, explore and save favorites from other users, and efficiently plan their weekly meals. The application also provides personalized shopping lists, making cooking and meal prep easier and more enjoyable. ',
+    description: 'Dynamic recipe-sharing platform that empowers users to upload their own culinary creations, explore and save favorites from other users, and efficiently plan their weekly meals. The application also provides personalized shopping lists, making cooking and meal prep easier and more enjoyable.',
     images: [Platemate1, Platemate2, Platemate3],
     technologies: [ReactLogo, NodeLogo, ExpressLogo, MongodbLogo, JsLogo, MuiLogo],
     link: 'https://platemate-app.netlify.app',
@@ -36,18 +46,10 @@ const projects = [
     title: 'WatchListr',
     description: 'Web application designed to help users track their favorite TV series. It allows you to manage series you want to watch, those currently in progress, and those you have already finished. The user-friendly interface ensures a seamless experience, making it easy to organize your viewing habits.',
     images: [Watchlistr1, Watchlistr2, Watchlistr3],
-    technologies: [ReactLogo, MongodbLogo, JsLogo, BootstrapLogo],
+    technologies: [ReactLogo, NodeLogo, ExpressLogo, MongodbLogo, JsLogo, BootstrapLogo],
     link: 'https://watchlistrih.netlify.app',
     githubFront: 'https://github.com/r-ruizfer/WatchListR-FrontEnd',
     githubBack: 'https://github.com/r-ruizfer/WatchListR-BackEnd'
-  },
-  {
-    title: 'Pollito Revenge',
-    description: 'Browser game where players control a chick armed with knives, seeking revenge against waves of enemies. Built with a focus on engaging gameplay and smooth mechanics, the game leverages JavaScript for core functionality and DOM manipulation.',
-    images: [Pollito1, Pollito2, Pollito3],
-    technologies: [JsLogo, CssLogo, HtmlLogo],
-    link: 'https://enriquepaez.github.io/pollito-revenge', 
-    githubFront: 'https://github.com/enriquepaez/pollito-revenge'
   },
 ];
 
